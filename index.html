@@ -28,15 +28,15 @@
         <input type="email" id="mail" name="user_email">
         
         <label for="title">Job Role</label>
-        <select id="title" name="user_title">
+        <select id="title" name="user_title" onchange="checkOption(this.value)">
           <option value="full-stack js developer">Full Stack JavaScript Developer</option>
           <option value="front-end developer">Front End Developer</option>
           <option value="back-end developer">Back End Developer</option>
           <option value="designer">Designer</option>          
           <option value="student">Student</option>
           <option value="other">Other</option>
-          
-        </select>           
+        </select>
+        <input type="text" name="title" id="other-text" style="display: none" />
       </fieldset>
       
       <fieldset class="shirt">
