@@ -17,9 +17,11 @@ function checkShirtDesign(value) {
   const colors = document.getElementById('color');
 
   if (value === 'js puns') {
-    colors.innerHTML = '<option value="cornflowerblue">Cornflower Blue</option><option value="darkslategrey"> Dark Slate Grey</option><option value="gold">Gold</option>'
+    colors.innerHTML =
+      '<option>Select Color</option><option value="cornflowerblue">Cornflower Blue</option><option value="darkslategrey"> Dark Slate Grey</option><option value="gold">Gold</option>';
   } else if (value === 'heart js') {
-    colors.innerHTML = '<option value="tomato">Tomato</option><option value = "steelblue" > Steel Blue</option><option value="dimgrey">Dim Grey</option>'
+    colors.innerHTML =
+      '<option>Select Color</option><option value="tomato">Tomato</option><option value = "steelblue" > Steel Blue</option><option value="dimgrey">Dim Grey</option>';
   } else {
     colors.innerHTML = '';
   }
